@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleting Object Properties</title>
+</head>
+<body>
+    <script>
+        // "use strict";
+        const person4={
+            'name':'Lokesh',
+            'age':28
+        }
+       const {name, age}=person4;
+        console.log(`Your name is ${name} and your age is  ${age}`);
+        
+       
+        delete person4['age'];
+        console.log(`Your name is ${name} and your age is  ${person4['age']}`);
+        console.log(person4);
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    'name':'Lokesh',
+    'favFoods':['Pizza','tacos','Salmon'],
+    'age':31,
+    'children':[
+        {
+            'name':'Zephyr',
+            'age':4,
+        },
+        {
+            'name':'Oliver',
+            'age':5
+        }
+    ]
+}

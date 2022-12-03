@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Game! A random number guessing game</title>
+</head>
+<body>
+
+    <script>
+        while(true){
+            
+            let randomNumber = Math.ceil(Math.random()*10);
+            console.log(randomNumber); //checking the number in console 
+
+            let num = prompt("Enter a number between 0 and 10");
+            
+            if(num ==  randomNumber){
+                alert("You are winner");
+                break;
+
+            }
+            console.log("Try again");
+        }
+    </script>
+</body>
+</html>

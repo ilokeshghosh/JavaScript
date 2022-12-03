@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date formatting in JS</title>
+</head>
+<body>
+
+    <script>
+        const months=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+        let d = new Date(2001,10,19)
+
+        console.log(d);
+        console.log(d.getFullYear());
+        console.log(d.getDate());
+        console.log(d.getMonth());
+        console.log(months[d.getMonth()]);
+        console.log(d.setYear(2022))
+        console.log(d.getFullYear());
+
+
+    </script>
+</body>
+</html>

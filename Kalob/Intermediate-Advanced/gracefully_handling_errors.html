@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracefully Handling Error using Try, Catch and finally</title>
+</head>
+<body>
+
+
+    <script>
+        const num=10;
+
+        try{
+            num=num+20;
+            // functionThatDoesntExist()
+            // throw"Lokesh's custom error";
+            // console.log("A thing in here");
+        }catch(error){
+            console.warn("Error Logging :",error);
+              
+        }finally{
+            console.log("The final number is", num);
+        }
+        console.log("hey")
+    </script>
+</body>
+</html>

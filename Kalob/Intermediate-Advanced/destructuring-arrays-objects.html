@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring arrays and objects</title>
+</head>
+<body>
+
+    <script>
+        //Destructuring an array
+        /*
+        const months=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+        const [jan,feb] = months;
+        console.log(jan,feb);
+        console.log(months);
+        */
+
+        //Destructuring an Object
+        const person3={
+            "name":"Lokesh",
+            "instagram":"@lokesh_ghosh",
+            "somethingelse":"something else is here"
+        }
+        const{name,instagram,somethingelse}=person3; //use this in place of -> const name = person3['name'];
+       console.log(name);
+       console.log(instagram);
+       console.log(somethingelse);
+
+    </script>
+</body>
+</html>
