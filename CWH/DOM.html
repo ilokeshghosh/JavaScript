@@ -5,13 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM manupulation in javaScript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 2px solid red;
+            margin:  3px 0;
+            background-color: cyan;
+            padding: 9px;
+        }
+        .bg-primary{
+            background-color: blueviolet;
+        }
+        .text-success{
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <button id="click">Click me</button>
-    <script>
-        document.getElementById('click').style.border = '2px solid blue';
-        let elm=document.getElementById('click');
-        console.log(elm);
-    </script>
+   <h1>Welcome to this javaScript tutorial</h1>
+
+   <div id="firstContainer" class="container">
+    <button id="click">Click Me</button>
+    <p>This is a paragraph</p>
+   </div>
+
+   <div class="container">
+    <p>This is a paragraph</p>
+
+   </div>
+   <script>
+    let elem= document.getElementById('click');
+    console.log(elem);
+
+    let elemClass= document.getElementsByClassName('container');
+    console.log(elemClass);
+
+    // elemClass[0].style.background='yellow';
+    elemClass[0].classList.add("bg-primary");
+    elemClass[0].classList.add("text-success");
+
+    console.log(elemClass[0].innerHTML);
+    console.log(elemClass[0].innerText);
+
+
+   </script>
 </body>
 </html>
