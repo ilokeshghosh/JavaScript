@@ -36,6 +36,8 @@
     <p>This is a paragraph</p>
 
    </div>
+
+   
    <script>
     let elem= document.getElementById('click');
     console.log(elem);
@@ -59,6 +61,16 @@
     let createdElement2= document.createElement('b');
     createdElement2.innerText ="This is created Bold";
     tn[0].replaceChild(createdElement2,createdElement);
+    //removeChild(element); --> removes an element
+
+    //Selecting using Query
+    sel = document.querySelector('.container');
+    console.log(sel);
+
+    sel = document.querySelectorAll('.container');
+    console.log(sel);
+
+
    </script>
 </body>
 </html>
