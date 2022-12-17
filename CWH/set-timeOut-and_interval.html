@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set timeout and set interval in javascript</title>
+</head>
+<body>
+    <h1>Welcome to this javaScript tutorial</h1>
+
+    <div id="firstContainer" class="container">
+     <button id="click" onclick="clicked()">Click Me</button>
+     <p>This is a paragraph</p>
+    </div>
+ 
+    <div class="container">
+     <p>This is a paragraph</p>
+ 
+    </div>
+
+    <div class="container">
+        <p>This is another paragraph</p>
+    </div>
+
+    <script>
+        // Normal Function
+        function sum1(a,b){
+            return a+b;
+        } 
+        sum2=(a,b)=>{
+            return a+b;
+        }
+
+        log=()=>{
+            console.log("Set Timeout Fired ");
+            document.querySelectorAll('.container')[1].innerHTML ="<b>Set Timeout  Fired</b>"
+        }
+        log2=()=>{
+            console.log("Set Interval Fired")
+            document.querySelectorAll('.container')[2].innerHTML="<b> Set Interval Fired</b>"
+        }
+
+        //setTimeOut  setInterval
+        clr=setTimeout(log,2000);
+        //clearTimeout(clr); //to stop setTimeout()
+
+        // setInterval
+        a= setInterval(log2,7000);
+       //clearInterval(a); //to stop setInterval()
+    </script>
+</body>
+</html>    

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON(JavaScript Object Notation)</title>
+</head>
+<body>
+    <script>
+        obj={name:"Lokesh", length:1, a:{this:'Th\"at'}};
+        jsn = JSON.stringify(obj);
+        console.log(typeof jsn);
+        console.log(jsn);
+        parsed = JSON.parse(`{"name":"Lokesh","length":1,"a":{"this":"Th\\"at"}}`);
+        console.log(parsed);
+
+        //Template Literals or Backticks
+        a=44;
+        console.log(`This is my variable value ${a}`);
+    </script>
+</body>
+</html>

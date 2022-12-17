@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage in JavaScript</title>
+</head>
+<body>
+    <h1>Welcome to this javaScript tutorial</h1>
+
+    <div id="firstContainer" class="container">
+     <button id="click" onclick="clicked()">Click Me</button>
+     <p>This is a paragraph</p>
+    </div>
+ 
+    <div class="container">
+     <p>This is a paragraph</p>
+ 
+    </div>
+
+    <div class="container">
+        <p>This is another paragraph</p>
+    </div>
+
+    <script>
+        localStorage.setItem('name','Lokesh');
+        localStorage.getItem('name'); // to get item in local storage;
+        localStorage.removeItem('name');// to remove item form local item 
+       // localStorage.clear(); //to Clear local storage;
+
+        
+    </script>
+</body>
+</html>

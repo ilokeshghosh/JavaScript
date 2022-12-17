@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events in JavaScript</title>
+
+
     <style>
         *{
             margin: 0;
@@ -23,8 +25,12 @@
             color: white;
         }
     </style>
+
+
 </head>
 <body>
+
+
     <h1>Welcome to this javaScript tutorial</h1>
 
     <div id="firstContainer" class="container">
@@ -40,10 +46,10 @@
     <script>
 
         //Click event
-        function clicked(){
-            document.querySelectorAll('.container')[0].innerHTML="<b> We have clicked </b>"
-            console.log("The button was clicked");
-        }
+        // function clicked(){
+        //     document.querySelectorAll('.container')[0].innerHTML="<b> We have clicked </b>"
+        //     console.log("The button was clicked");
+        // }
         
 
         //window onload event
@@ -59,12 +65,17 @@
         //     console.log("Clicked the div with id firstContainer");
         // })
 
+
+
         //mouse over event
      /*  
       firstContainer.addEventListener('mouseover',function(){
             console.log("Hover over container");
         })
         */
+
+
+
 
         //mouse out event
          /*  
@@ -73,20 +84,28 @@
         })
         */
 
+
+
+
         //mouse up event
-         /*  
+        let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
         firstContainer.addEventListener('mouseup',function(){
+            document.querySelectorAll('.container')[1].innerHTML= prevHTML;
             console.log("Mouse up when clicked on container");
         })
-        */
+        
+
+
 
         // mouse down event
-         /*  
+         
         firstContainer.addEventListener('mousedown',function(){
+            document.querySelectorAll('.container')[1].innerHTML="<b> We have clicked </b>"
             console.log("Mouse down when clicked on container");
         })
-        */
+         
     </script>
+
 
 </body>
 </html>
